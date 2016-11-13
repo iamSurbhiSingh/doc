@@ -1,0 +1,18 @@
+@import 'variable';
+
+.navbar-default {
+	background: $primaryblack !important;
+	border-radius: 0px !important;
+	border: 0px;
+	
+	.navbar-nav, li, a {
+		color: $lightwhite !important;
+		&:hover, &:focus {
+			color: $white;
+		}
+	}
+	.navbar-nav .signup {
+		background: $primaryorange !important;
+		color: $lightwhite;
+	}
+}
