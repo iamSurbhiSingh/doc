@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+	<link rel="stylesheet" href="vendor/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="vendor/css/material-design-color-palette.min.css">
+	<script type="text/javascript" src="vendor/js/jquery.min.js"></script>
+	<script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body>
+	<!-- ==================== top nav bar ====================== -->
+	<nav class="navbar navbar-default">
+	  	<div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Brand</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      	<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"> User Name<i class="zmdi zmdi-settings zmdi-hc-fw"></i><span class="caret"></span></a>
+						<ul class="dropdown-menu">
+			            	<li><a href="#">Action</a></li>
+			            	<li><a href="#">Another action</a></li>
+			            	<li><a href="#">Something else here</a></li>
+			            	<li role="separator" class="divider"></li>
+			            	<li><a href="#">Separated link</a></li>
+			          	</ul>	
+					</li>
+		      	</ul>
+		    </div>
+	  	</div>
+	</nav>
+	<!-- =============== side bar =================== -->
+	<div id="wrapper" class="container-fluid">
+	  		<div id="sidebar-wrapper" class="col-md-2">
+	            <div class="sidebar">
+	                <ul class="nav list-group">
+	                    <li class="active">
+	                        <a href="#" class="list-group-item active"><i class="icon-home icon-1x"></i>Spaces</a>
+	                    </li>
+	                    <li>
+	                        <a href="#" class="list-group-item"><i class="icon-home icon-1x"></i>Teams</a>
+	                    </li>
+	                    <li>
+	                        <a href="#" class="list-group-item"><i class="icon-home icon-1x"></i>Members</a>
+	                    </li>
+	                    <li>
+	                        <a href="#" class="list-group-item"><i class="icon-home icon-1x"></i>Settings</a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+    </div>
+    <!-- ======================== main body ================== -->
+    <div class="container-fluid">
+    	<div class="row">
+    		<div class="col-md-10 col-md-offset-2">
+	    		<div class="main-body">
+	    			<!-- ============================ toolbar and search ================= -->
+	    			<div class="page-heading">
+						<h1 class="top-heading text-overflow">Spaces</h1>
+						<div class="search">
+							<div class="input-group custom-search-form">
+						      	<input type="text" class="form-control" placeholder="Search">
+						      	<span class="input-group-btn">
+						        	<button class="text-muted"><i class="zmdi zmdi-search zmdi-hc-lg"></i></button>
+						      	</span>
+						    </div>
+						</div>
+					</div>
+					<!-- ================ table ===================== -->
+					<div class="col-md-12">
+						<div class="table-wraper">
+							<div class="panel">
+								<div class="panel-heading">
+								    <h3 class="panel-title">All Spaces </h3>
+								</div>
+								<div class="panel-body">
+									<div class="form--inline pad-bot">
+										<div class="row">
+											<div class="col-md-6 table-toolbar-left pull-left">
+												<button class="btn btn-purple">
+													<i class="zmdi zmdi-plus"></i> Add space
+												</button>
+												<!-- <div class="btn-group" role="group">
+													<button type="button" class="btn btn-default"><i class="zmdi zmdi-info-outline"></i></button>
+													<button type="button" class="btn btn-default"><i class="zmdi zmdi-mail-send"></i></button>
+												</div> -->
+											</div>
+											<!-- <div class="col-md-6 table-toolbar-right pull-right">
+												<div class="form-group">
+													<input type="text" class="form-control" id="" placeholder="Search">
+												</div>
+												<div class="btn-group" role="group">
+													<button type="button" class="btn btn-default"><i class="zmdi zmdi-print"></i></button>
+													<button type="button" class="btn btn-default"><i class="zmdi zmdi-settings"></i></button>
+												</div>
+											</div> -->
+										</div>
+									</div>
+									<div class="table-responsive">
+										<table class="table table-striped">
+											<thead>
+												<tr>
+													<th>Spaces</th>
+													<th>Description</th>
+													<th class="text-center">Categories</th>
+													<th class="text-center"></th>
+													<th class="text-center"></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<a href="#" class="btn-link"> Akademe</a>
+													</td>
+													<td>description</td>
+													<td class="text-center">
+														<div class="label label-default label-table">software</div>
+													</td>
+													<td class="text-center">
+														<i class="zmdi zmdi-alert-circle-o"></i>
+													</td>
+													<td class="text-center">
+														<i class="zmdi zmdi-star-outline"></i>
+													</td>
+												</tr>
+												<!-- ====================== row 2  ================ -->
+												<tr>
+													<td>
+														<a href="#" class="btn-link"> Akademe</a>
+													</td>
+													<td>description</td>
+													<td class="text-center">
+														<div class="label label-default label-table">software</div>
+													</td>
+													<td class="text-center">
+														<i class="zmdi zmdi-alert-circle-o"></i>
+													</td>
+													<td class="text-center">
+														<i class="zmdi zmdi-star-outline"></i>
+													</td>
+												</tr>
+												<!-- ================== row 3 ============ -->
+												<tr>
+													<td>
+														<a href="#" class="btn-link"> Akademe</a>
+													</td>
+													<td>description</td>
+													<td class="text-center">
+														<div class="label label-default label-table">software</div>
+													</td>
+													<td class="text-center">
+														<i class="zmdi zmdi-alert-circle-o"></i>
+													</td>
+													<td class="text-center">
+														<i class="zmdi zmdi-star-outline"></i>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+	    		</div>
+	    	</div>
+    	</div>
+    </div>
+</body>
+</html>
