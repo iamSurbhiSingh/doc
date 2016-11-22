@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="vendor/js/jquery.min.js"></script>
 	<script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
 </head>
 <body>
 	<header>
@@ -26,12 +27,60 @@
 				</div>
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Sign in</a></li>
+						<li><a href="#"  data-toggle="modal" data-target="#myModal">Sign in</a></li>
 						<li class="signup"><a href="#">Sign Up</a></li>
 					</ul>
-				</div><!-- /.navbar-collapse -->
+				</div>
 			</div>
 		</nav>
 	</header>
+	<!-- ========================== modal ============== -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+	 	 <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title text-center">Login</h4>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div class="col-md-6 col-md-offset-3 text-center">
+		      			<form action="">
+		      				<div class="form-group">
+		      					<input type="email" name="" id="input" class="form-control" value="" required="required" title="" placeholder="Email">
+		      				</div>
+		      				<div class="form-group">
+		      					<input type="password" name="" id="input" class="form-control" value="" required="required" title="" placeholder="Password">
+		      				</div>
+		      				<div class="btn-info btn btn-block" style="margin-bottom: 10px;">Submit</div>
+		      			</form>
+		      			<a href="" class="sm-text login-text">Forgot Password</a>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div><!-- /.modal-content -->
+	 	 </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<!-- ================= end ====================== -->
+	<!-- ================= bg ================== -->
+	
+	<section class="bg-image jquer-slide">
+		<div class="overlay"></div>
+		<div class="content">
+			<div class="container clearfix">
+				<div class="row text-center">
+					<div class="col-md-8 col-md-offset-2 ">
+						<h1 class="heading  ">Doctype heading...</h1>
+					</div>
+					<div class="col-md-8 col-md-offset-2 ">
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero quos voluptates, cupiditate tempore architecto nulla excepturi voluptatem, assumenda officia qui laborum dolores, dicta nisi fuga dolorem nostrum commodi sint?</p>
+					</div>
+					<div class="col-md-8 col-md-offset-2 ">
+						<div class="btn btn-generic">Start Documenting</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>
