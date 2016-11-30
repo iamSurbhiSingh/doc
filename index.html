@@ -5,82 +5,179 @@
 	<title>Document</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="vendor/css/hover-min.css">
+	<link rel="stylesheet" href="vendor/css/material-design-color-palette.min.css">
 	<link rel="stylesheet" href="vendor/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="vendor/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="vendor/css/bootstrap-social.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="vendor/js/jquery.min.js"></script>
+	<script src="vendor/js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
 </head>
 <body>
-	<header>
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Docaty</a>
-				</div>
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#"  data-toggle="modal" data-target="#myModal">Sign in</a></li>
-						<li class="signup"><a href="#">Sign Up</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
-	<!-- ========================== modal ============== -->
-	<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
-	 	 <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title text-center">Login</h4>
-		      </div>
-		      <div class="modal-body">
-		      	<div class="row">
-		      		<div class="col-md-6 col-md-offset-3 text-center">
-		      			<form action="">
-		      				<div class="form-group">
-		      					<input type="email" name="" id="input" class="form-control" value="" required="required" title="" placeholder="Email">
-		      				</div>
-		      				<div class="form-group">
-		      					<input type="password" name="" id="input" class="form-control" value="" required="required" title="" placeholder="Password">
-		      				</div>
-		      				<div class="btn-info btn btn-block" style="margin-bottom: 10px;">Submit</div>
-		      			</form>
-		      			<a href="" class="sm-text login-text">Forgot Password</a>
-		      		</div>
-		      	</div>
-		      </div>
-		    </div><!-- /.modal-content -->
-	 	 </div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-	<!-- ================= end ====================== -->
-	<!-- ================= bg ================== -->
-	
-	<section class="bg-image jquer-slide">
-		<div class="overlay"></div>
-		<div class="content">
-			<div class="container clearfix">
-				<div class="row text-center">
-					<div class="col-md-8 col-md-offset-2 ">
-						<h1 class="heading  ">Doctype heading...</h1>
+	<!-- =============== banner =============== -->
+	<div class="container-fluid"> 
+		<div class="row">
+			<header>
+				<nav class="navbar navbar-default custom-navcolor" role="navigation">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">Docaty</a>
+						</div>
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="signin"><a href="#"  data-toggle="modal" data-target="#myModal">Sign Up</a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="col-md-8 col-md-offset-2 ">
-						<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero quos voluptates, cupiditate tempore architecto nulla excepturi voluptatem, assumenda officia qui laborum dolores, dicta nisi fuga dolorem nostrum commodi sint?</p>
+				</nav>
+				<!-- ===================== full body ============ -->
+				<div id="home" class="homepage-hero-module" style="padding: 0px; margin-bottom: 0px; height: 428px; position: relative;">
+    				<div class="video-container">
+						<div class="image-container">
+							<!-- ============== end ========== -->
+							<div class="homepage-hero-module">
+							    <div class="video-container">
+							        <div class="filter"></div>
+							        <video autoplay loop class="fillWidth">
+							            <source src="image/Working-it.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+							            <source src="/image/Working-it.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+							        </video>
+							        <div class="poster hidden">
+							            <img src="/image/Working-it.jpg" alt="cover pic">
+							        </div>
+							    </div>
+							</div>
+						</div>
+						<!-- =================== text =================== -->
+						<div class="title-container text-center">
+							<div class="headline">
+								<img src="image/Coverr.svg" alt="" height="70">
+								<h3 class="text-thin top-heading">Create, Share and Store your Documentation </h3>
+								<a href="" class="btn btn-document btn-bordered mar-top-10 hvr-reveal">Start Documenting</a>
+								<div class="down-arrow">
+									<a href="#">
+										<i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-8 col-md-offset-2 ">
-						<div class="btn btn-generic">Start Documenting</div>
+					<!-- ======================= register ====================== -->
+					<div class="col-md-3 col-md-offset-9 login-slide jq_login-slide display-log">
+						<div class="login" id="register-panel">
+							<form action="" class="register">
+								<div class="form-group custom-black-form_group">
+									<input type="text" class="form-control custom-form-control" id="" placeholder="Username">
+								</div>
+								<div class="form-group custom-black-form_group">
+									<input type="email" class="form-control custom-form-control" id="" placeholder="Email">
+								</div>
+								<div class="form-group custom-black-form_group">
+									<input type="password" class="form-control custom-form-control" id="" placeholder="Password">
+								</div>
+								<button type="submit" class="btn btn-orange btn-block">Register</button>
+
+								<div class="col-md-12 text-center">
+									<p class="login-here">Do you have account?<a href="#" class="login_jquery-click">Login Here</a></p>
+								</div>
+								<p class="login-through text-center">Or Login Using</p>
+								<div class="social-icon-container text-center">
+									<a class="btn btn-social-icon btn-facebook">
+									    <i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
+									<a class="btn btn-social-icon btn-google">
+									    <span class="fa fa-google"></span>
+									</a>
+									<a class="btn btn-social-icon btn-twitter">
+									    <span class="fa fa-twitter"></span>
+									</a>
+								</div>
+							</form>
+						</div>
+					</div>
+
+
+					<!-- ============================ login =================  -->
+					<div class="col-md-3 col-md-offset-9 login-slide login_jqhide" id="login-panel">
+						<div class="login">
+							<form action="" class="lgin">
+								<div class="form-group custom-black-form_group">
+									<input type="email" class="form-control custom-form-control" id="" placeholder="Email">
+								</div>
+								<div class="form-group custom-black-form_group">
+									<input type="password" class="form-control custom-form-control" id="" placeholder="Password">
+								</div>
+								<button type="submit" class="btn btn-orange btn-block">Log In</button>
+
+								<div class="col-md-12 text-center">
+									<p class="login-here"><a href="#">Forgot Paassword?</a></p>
+								</div>
+								<p class="login-through text-center">Or Login Using</p>
+								<div class="social-icon-container text-center">
+									<a class="btn btn-social-icon btn-facebook">
+									    <i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
+									<a class="btn btn-social-icon btn-google">
+									    <span class="fa fa-google"></span>
+									</a>
+									<a class="btn btn-social-icon btn-twitter">
+									    <span class="fa fa-twitter"></span>
+									</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				
+			</header>
+			
+		</div>
+	</div>
+	<!-- ================= end ==================  -->
+
+	<!-- =============== about section ========== -->
+	<section class="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-content">
+					<div class="col-sm-12 text-center">
+						<h1 class="heading-common">About Docaty</h1>
+						<hr class="heading-hr text-center">
+					</div>
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<p class="paragraph-common">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam itaque ipsa ad velit magni quis vel iure facilis cumque aut, repudiandae quas reprehenderit ea, molestiae sint accusantium, soluta voluptatum distinctio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga culpa animi odit praesentium rem ipsa molestias repellendus, qui neque, ratione molestiae, incidunt quis repudiandae repellat cupiditate amet aperiam. Repellat, veniam!</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+		
+	<!-- ====================== end ============= -->
+	<!-- ================= feature ================ -->
+	<section class="feature">
+		<div class="container">
+			<div class="row">
+				<div class="feautre-content">
+					<div class="col-md-12 text-center">
+						<h1 class="heading-orange heading-common">Features</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ===================== end============== -->
 </body>
 </html>
